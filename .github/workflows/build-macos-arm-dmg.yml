@@ -19,6 +19,7 @@ jobs:
       BUILD_ARCH: arm64
       SKIP_SIGN: "1"
       SKIP_NOTARIZE: "1"
+      IBToolNeverDeque: 1
 
     steps:
       - name: Checkout
