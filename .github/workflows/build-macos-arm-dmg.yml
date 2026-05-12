@@ -44,6 +44,10 @@ jobs:
             exit 1
           fi
           sudo xcode-select -s "$XCODE_APP/Contents/Developer"
+      - name: Reset framework cache
+        run: |
+          sudo rm -rf /var/folders/*/C/com.apple.dt.Xcode.pg/
+          sudo rm -rf ~/Library/Caches/com.apple.dt.Xcode
 
       - name: Show build environment
         run: |
